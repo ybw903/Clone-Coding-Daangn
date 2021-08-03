@@ -1,0 +1,38 @@
+.footerContainer{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.footerList {
+    list-style-type: none;
+}
+
+.footerListItem {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 3.2rem;
+}
+
+.linkHighlight{
+    color: #fff;
+    font-weight: 700;
+}
+
+.copyrightText {
+    font-size: 1.4rem;
+    margin: 0.4rem 0;
+    color: #868e96
+}

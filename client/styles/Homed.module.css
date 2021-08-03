@@ -1,0 +1,129 @@
+#homeMainSectionTop {
+    margin-top: 72px;
+    padding-top: 24px;
+    background-color: #FBF7F2;
+}
+
+#homeMainSectionTop #homeMainTop {
+    width: 1024px;
+    height: 760px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FBF7F2;
+}
+
+#homeMainSectionTop .homeMainTitle {
+    font-size: 4.8rem;
+    line-height: 1.3;
+    padding-top: 27rem;
+    margin-bottom: 3.2rem;
+    letter-spacing: -0.4px;
+}
+
+
+.mt3 {
+    margin-top: 1.6rem;
+}
+
+.mb2 {
+    margin-bottom: 0.8rem;
+}
+
+.textM {
+    font-size: 1.6rem !important;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+}
+
+.textS {
+    font-size: 1.4rem !important;
+    line-height: 1.5;
+}
+
+.textXS {
+    font-size: 1.3rem !important;
+    line-height: 1.5;
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.homeMainSection {
+    padding: 6rem 0;
+}
+
+.homeMainContent {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homeMainSection .homeMainTitle {
+    font-size: 4rem;
+    line-height: 1.35;
+    margin-bottom: 2.4rem;
+}
+
+.homeMainSection .homeMainReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.homeMainSection .homeStroyList {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.homeStroyList {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.homeStoryListItem {
+    margin-right: 4rem;
+    margin-left: 0;
+    max-width: 14rem;
+}
+
+.homeButtons {
+    margin-top: 3.2rem;
+}
+
+.homeButton {
+    background-color: #F1F3F5;
+    color: #212529;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 1.45rem 2.6rem;
+    display: inline-block;
+}
+
+.homeHotContent {
+    width: 1024px;
+    margin: 6rem auto 12rem auto;
+}
+
+.cardsWrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.backgroundPaleGreen {
+    background-color: #E6F3E6;
+}
+
+.backgroundGray {
+    background-color: #F8F9FA;
+}
