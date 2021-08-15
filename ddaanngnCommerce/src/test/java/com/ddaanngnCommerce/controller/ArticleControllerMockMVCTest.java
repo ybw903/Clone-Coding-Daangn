@@ -44,7 +44,6 @@ class ArticleControllerMockMVCTest {
         when(mockArticle.getCategory()).thenReturn(Category.CLOTHING);
         when(mockArticle.getImgURL()).thenReturn("테스트 이미지 경로");
         when(mockArticle.getStatus()).thenReturn(Status.SELLING);
-        final ArticleResponseDto articleResponseDto = new ArticleResponseDto(mockArticle);
         given(articleService.getArticleById(mockArticle.getId())).willReturn(mockArticle);
 
         //when&then
@@ -52,6 +51,17 @@ class ArticleControllerMockMVCTest {
                 .get("/articles/{id}",1L))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id",is(mockArticle.getId().intValue())))
+                .andDo(print());
+    }
+
+    @DisplayName("모든 게시글을 조회하는 경우")
+    @Test
+    void getArticlesAll() throws Exception {
+        //given
+
+        //when&then
+        mockMvc.perform(MockMvcRequestBuilders.get("/articles"))
+                .andExpect(status().isOk())
                 .andDo(print());
     }
 
