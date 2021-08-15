@@ -2,7 +2,6 @@ package com.ddaanngnCommerce.service;
 
 import com.ddaanngnCommerce.domain.Article;
 import com.ddaanngnCommerce.domain.ArticleRepository;
-import com.ddaanngnCommerce.domain.Category;
 import com.ddaanngnCommerce.dto.ArticleCreateDto;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,9 +11,9 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.*;
@@ -55,6 +54,21 @@ class ArticleServiceTest {
 
         //then
         verify(articleRepository).findAll();
+    }
 
+    @DisplayName("게시글 ID로 게시글을 성공적으로 조회하는 경우")
+    @Test
+    void getArticles() {
+        //given
+        final Article article = mock(Article.class);
+        when(article.getId()).thenReturn(1L);
+        given(articleRepository.findById(1L)).willReturn(Optional.of(article));
+
+        //when
+        Article getArticle = articleService.getArticleById(1L);
+
+        //then
+        verify(articleRepository).findById(1L);
+        assertThat(getArticle.getId()).isEqualTo(1L);
     }
 }
