@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Homed.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -38,6 +39,14 @@ export default function Home() {
           <p className={styles.textM}>
             동네 주민들과 가깝고 따뜻한 거래를 지금 경험해 보세요.
           </p>
+          <div className={styles.homeButtons}>
+            <Link href="">
+              <a className={styles.homeButton}>인기매물 보기</a>
+            </Link>
+            <Link href="trust">
+              <a className={styles.homeButton}>믿을 수 있는 중고거래</a>
+            </Link>
+          </div>
         </div>
       </section>
       <section className={styles.homeMainSection} style={{backgroundColor:'#E6F3E6'}} >

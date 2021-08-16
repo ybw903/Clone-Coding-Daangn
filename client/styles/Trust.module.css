@@ -1,0 +1,87 @@
+.trustHeader {
+    margin-top: 7.3rem;
+    background-color: #F8F9FA;
+    padding-top: 9.6rem;
+}
+
+.title {
+    font-size: 4.2rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.description {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5.6rem;
+}
+
+.trustHeaderImage {
+    background-size: 760px 363px;
+    width: 760px;
+    height: 363px;
+    margin: 0 auto;
+}
+
+.trustBottom, .trustTop {
+    padding-top: 10rem;
+}
+
+.trustTop {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.mainTitle {
+    font-size: 3.4rem;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.trustBottom .trustSection, .trustTop .trustSection {
+    margin: 8rem 0;
+}
+
+.trustDetail {
+    display: inline-block;
+    width: calc(100% - 340px - 120px - 60px - 6px);
+    vertical-align: center;
+    margin-left: 6rem;
+}
+
+.trustDetail .title {
+    display: block;
+    font-size: 2.4rem;
+    text-align: left;
+    margin-bottom: 1.6rem;
+}
+
+.trustDetail .description {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.trustBottom {
+    background-color: #F8F9FA;
+}
+
+.trustContainer {
+    width: 980px;
+    margin: 8rem auto 0 auto;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.trustContainer .trustSection {
+    max-width: 330px;
+    margin-top: 0;
+    margin-bottom: 8rem;
+}
+
+.trustContainer .trustSection .trustDetail {
+    width: 100%;
+    margin: 1.6rem 0 0 0;
+}
